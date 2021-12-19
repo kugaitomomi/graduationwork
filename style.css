@@ -223,6 +223,9 @@ h1,h2 {
   padding: 3% 5%;
   box-sizing: border-box;
 }
+.ttlMsg {
+  margin-bottom: 30px;
+}
  .mv {
     display: flex;
   }
