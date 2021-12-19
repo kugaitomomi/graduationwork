@@ -11,13 +11,10 @@ body {
 	background-size: 14px 14px;
 }
 
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.fzL {
-  font-size: 2.5rem;
-}
+
+
+
+
 h1,h2 {
   text-align: center;
   margin: 0;
@@ -35,16 +32,7 @@ h1,h2 {
   background: #fff;
   border: 3px solid #000;
 }
-.mv h2:before{
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  margin-top: -15px;
-  margin-left: 0px;
-  border: 15px solid transparent;
-  border-left: 15px solid #000;
-}
+
 .mv h2 span{
   display: block;
   margin: 0;
@@ -83,6 +71,7 @@ h1,h2 {
 .greeting9 {
   font-family: 'Syncopate', sans-serif, 'Noto Sans JP', 'Noto Serif Traditional Chinese', 'PT Sans';
 }
+
 .wrapper {
   background-color: #fff;
   padding: 15px;
@@ -92,31 +81,15 @@ h1,h2 {
   align-items: center;
   justify-content: center;
 }
-.imgBox {
-  width: 530px;
-  /* height: 530px; */
-  height: 327.6px;
-  text-align: center;
-}
-.imgBox img {
-  /* width: 100%; */
-  height: 100%;
-}
-.box { 
-  text-align: center;
-  margin-bottom: 38px;
-}
+
 .box p{
-  margin: 0;
   font-family: 'Noto Sans JP', 'Readex Pro', cursive, sans-serif ;
-  font-size: 2.4rem;
-  margin: 22px 0;
 }
 
 #message {
- width: 530px;
+ /* width: 530px;
  height: 39px;
- font-size: 1.8rem;
+ font-size: 1.8rem; */
  font-family: 'Noto Sans JP', 'Readex Pro', cursive, sans-serif ;
 }
 .btnArea {
@@ -166,3 +139,140 @@ h1,h2 {
 #playMusic i.fa-pause {
   color: rgb(19, 144, 228);
 }
+
+
+
+/*------------------------------------------
+  Foundation Media Queries 
+   https://get.foundation/sites/docs/media-queries.html
+--------------------------------------------*/
+ 
+/* Small screens - スマホ */
+@media only screen {
+    .wrapper {
+      padding: 5%;
+      width: 100%;
+      box-sizing: border-box;
+  }
+  .imgBox {
+    /* width: 225px;
+    height: 225px; */
+    margin-top: 10px;
+  }
+  .mv {
+    display: block;
+  }
+  .mv h2 {
+  position: relative;
+  display: inline-block;
+  /* margin: 1.5em 0; */
+  margin: 0;
+  /* padding: 17px 10px; */
+  padding: 8px 5px;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  border: 3px solid #000;
+}
+  #message {
+    width: 100%;
+  }
+  .ttlMsg {
+    margin-bottom: 5%;
+  }
+  .mv h2:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: 0;
+    margin-left: 0px;
+    border: 16px solid transparent;
+    border-top: 15px solid #000;
+}
+.fzL {
+  font-size: 2.0rem;
+}
+.imgBox img {
+  width: 100%;
+}
+.box { 
+  width: 100%;
+  text-align: center;
+  margin-bottom: 19px;
+}
+.box p{
+  font-size: 2.4rem;
+  margin: 11px 0;
+  display: block;
+}
+ } /* スマホ用のスタイル -モバイルファースト */
+ 
+@media only screen and (max-width: 40em) { } /* 最大幅640px、スマホ専用のスタイル */
+ 
+/* Medium screens - タブレット */
+@media only screen and (min-width: 40.063em) { } /* 最小幅641px、Mediumスクリーン */
+ 
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* 最小幅641pxおよび最大幅1024px、タブレット専用のスタイル */
+ 
+/* Large screens - デスクトップ */
+@media only screen and (min-width: 64.063em) { 
+  .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5%;
+  box-sizing: border-box;
+}
+ .mv {
+    display: flex;
+  }
+.fzL {
+  font-size: 2.5rem;
+}
+.musicArea { 
+  max-width: 1200px;
+}
+.imgBox {
+  width: 530px;
+  height: 327.6px;
+  text-align: center;
+}
+.imgBox img{
+  height: 100%;
+  width: auto;
+}
+.mv h2:before{
+  top: 50%;
+  left: 100%;
+  margin-top: -15px;
+  margin-left: 0px;
+  border: 15px solid transparent;
+  border-left: 15px solid #000;
+}
+#message {
+ width: 530px;
+ height: 39px;
+ font-size: 1.8rem;
+}
+.box {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.btnArea {
+  margin-top: 10px;
+}
+} 
+
+/* 最小幅1025px、Largeスクリーン */
+ 
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* 最小幅1025pxおよび最大幅1440px、Largeスクリーン専用のスタイル */
+ 
+/* XLarge screens */
+@media only screen and (min-width: 90.063em) { } /* 最小幅1441px、XLargeスクリーン */
+ 
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* 最小幅1441pxおよび最大幅1920px、XLargeのスクリーン専用のスタイル */
+ 
+/* XXLarge screens */
+@media only screen and (min-width: 120.063em) { } /* 最小幅1921px、XXLargeスクリーン */
+ 
+/*------------------------------------------*/
